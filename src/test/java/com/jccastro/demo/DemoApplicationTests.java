@@ -18,18 +18,23 @@ class DemoApplicationTests {
 		
 		Moon moon = new Moon();
 		
-		moon.setPosition_y(0);
-		moon.setPosition_x_0("X");
-		moon.setPosition_x_0("X");
-		moon.setPosition_x_0("X");
-		moon.setPosition_x_0("X");
-		moon.setPosition_x_0("X");
-		moon.setPosition_x_0("X");
-		moon.setPosition_x_0("X");
+		moon.setPositionY(0);
+		moon.setPositionX0("X");
+		moon.setPositionX1("X");
+		moon.setPositionX2("X");
+		moon.setPositionX3("X");
+		moon.setPositionX4("X");
+		moon.setPositionX5("X");
+		moon.setPositionX6("X");
+		moon.setPositionX7("X");
 		
 		Moon savedObject = moonRepository.save(moon);
 		
-		System.out.print(savedObject.toString());		
+		//moonRepository.findByPosition_y(0);
+		
+		//System.out.println(postionY0);
+		
+		System.out.println(savedObject.toString());	
 		
 	}
 

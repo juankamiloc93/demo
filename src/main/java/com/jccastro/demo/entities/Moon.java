@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -23,16 +24,32 @@ public class Moon {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	private int position_y;
+	@Column(name = "position_y")
+	private int positionY;
 	
-	private String position_x_0;
-	private String position_x_1;
-	private String position_x_2;
-	private String position_x_3;
-	private String position_x_4;
-	private String position_x_5;
-	private String position_x_6;
-	private String position_x_7;
+	@Column(name = "position_x_o")
+	private String positionX0;
+	
+	@Column(name = "position_x_1")
+	private String positionX1;
+	
+	@Column(name = "position_x_2")
+	private String positionX2;
+	
+	@Column(name = "position_x_3")
+	private String positionX3;
+	
+	@Column(name = "position_x_4")
+	private String positionX4;
+	
+	@Column(name = "position_x_5")
+	private String positionX5;
+	
+	@Column(name = "position_x_6")
+	private String positionX6;
+	
+	@Column(name = "position_x_7")
+	private String positionX7;
 	
 	@CreationTimestamp
 	private LocalDateTime dateCreated;
